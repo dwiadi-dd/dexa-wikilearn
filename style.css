@@ -76,7 +76,7 @@ header {
   justify-content: space-between;
   padding: 1em 2em;
   border-bottom: 2px;
-  width: 100vw;
+
   border-bottom: 1px solid rgb(187, 187, 187);
   
   /* border:  2px solid rgb(94, 212, 94); */
@@ -142,6 +142,9 @@ aside{
     border: 2px solid blueviolet;
     overflow: scroll    ;
     padding: 1em 2em;
+    scrollbar-width: thin;
+    width: 98%;
+
 }
 .side-menu{
     align-items: center;
@@ -173,6 +176,13 @@ article{
 .content-title{
     font-weight: 600;
     font-size: 2rem;
+    margin-bottom: .4em;
+}
+
+code{
+    background-color: rgb(18, 46, 85);
+    width: 100%;
+    color: white;
 }
 /* FOOTER */
 
