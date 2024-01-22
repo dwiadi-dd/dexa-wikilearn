@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Documentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      class="flex items-center justify-around px-6 py-4 border-b border-gray-200 dark:border-gray-800"
+    >
+      <a class="flex items-center gap-2" href="#">
+        <!-- <span class="text-2xl font-semibold">Documentation</span> -->
+        <img src="assets/FA_DIGICAMP_LOGO.png" class="h-12" alt="" />
+      </a>
+      <form class="flex-1 ml-auto flex items-center gap-4 justify-end">
+        <input
+          class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1"
+          placeholder="Search..."
+          type="search"
+        />
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+          type="submit"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-5 w-5"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+          </svg>
+        </button>
+      </form>
+    </header>
+    <main
+      class="grid lg:grid-cols-[240px_1fr] gap-10 items-start py-10 px-4 md:px-6"
+    >
+      <aside class="w-64 border-r border-gray-200 dark:border-gray-800 p-6">
+        <h2 class="text-lg font-semibold mb-4">Content Index</h2>
+        <nav>
+          <a
+            class="block py-1 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100"
+            href="#"
+          >
+            Introduction
+          </a>
+          <a
+            class="block py-1 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100"
+            href="#"
+          >
+            Tutorials
+          </a>
+          <a
+            class="block py-1 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100"
+            href="#"
+          >
+            API Reference
+          </a>
+          <a
+            class="block py-1 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100"
+            href="#"
+          >
+            Examples
+          </a>
+        </nav>
+      </aside>
+      <article>
+        <section id="getting-started-1" class="space-y-4">
+          <h2 class="text-2xl font-bold">Welcome</h2>
+          <p class="text-gray-500">
+            To install the software, follow these steps...
+          </p>
+          <pre class="rounded-md bg-gray-100 p-4">
+          <code class="text-sm">npm install software</code>
+        </pre>
+        </section>
+        <section id="getting-started-2" class="space-y-4">
+          <h2 class="text-2xl font-bold">Configuration</h2>
+          <p class="text-gray-500">
+            To configure the software, do the following...
+          </p>
+          <pre class="rounded-md bg-gray-100 p-4">
+          <code class="text-sm">software --configure</code>
+        </pre>
+        </section>
+        <section id="troubleshooting-1" class="space-y-4">
+          <h2 class="text-2xl font-bold">Common Issues</h2>
+          <p class="text-gray-500">
+            Here are some common issues and how to resolve them...
+          </p>
+        </section>
+        <section id="api-reference-1" class="space-y-4">
+          <h2 class="text-2xl font-bold">Endpoints</h2>
+          <p class="text-gray-500">
+            Here are the API endpoints and how to use them...
+          </p>
+        </section>
+        <section id="faqs-1" class="space-y-4">
+          <h2 class="text-2xl font-bold">General Questions</h2>
+          <p class="text-gray-500">
+            Here are some frequently asked questions...
+          </p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
