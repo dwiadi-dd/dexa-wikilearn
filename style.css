@@ -178,11 +178,16 @@ aside{
 .side-nav {
     border-left: 1px solid rgb(182, 182, 182,.2);
 }
-.side-nav a:hover{
+.side-nav-link:hover{
     color: var(--clr-seccondary);
 }
 
 
+.side-nav-link.active{
+    color: var(--clr-seccondary);
+    font-weight: 800;
+
+}
 /* Article */
 article{
     height: 100vh;
