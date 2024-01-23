@@ -15,6 +15,7 @@
     --clr-shadow: #bbbbbb;
     --clr-white: #fff;
     --clr-white-accent:#F1F2F2;
+    --clr-login-accent:#f7f7f7;
     --clr-blue:#005CAB;
     --clr-blue-accent:#3E99D3;
 }
@@ -133,6 +134,18 @@ input[type=search] {
     padding: .9em 2em;
     border-radius: 10px;
 }
+
+input[type=search]:focus {
+   outline: none;
+}
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+button:hover{
+    color: var(--clr-main);
+}
 /* 
 button{
 
@@ -145,6 +158,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding: .1em 12em;
+    background-color: var(--clr-white);
     
 }
 
@@ -353,7 +367,8 @@ section.features{
     height: 320px;
     display: flex;
     flex-direction: column;
-box-shadow: 0px 42px 84px rgba(36,43,75,.08);}
+    box-shadow: 0px 42px 84px rgba(36,43,75,.08);
+}
 .feature h3{
     font-size: 1.5em;
     font-weight: 600;
@@ -383,6 +398,7 @@ box-shadow: 0px 42px 84px rgba(36,43,75,.08);}
     margin: auto;
     width: 80vw;
     justify-content: space-around;
+    align-items: center;
 }
 
 .company-list img{
@@ -424,3 +440,53 @@ section.requirement img{
     text-align: justify;
 
 }
+
+/* LOGIN SECTION */
+
+.login{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 3em;
+    background-color: var(--clr-white);
+    font-size: 1.2em;
+    border-radius: 20px;   
+}
+
+.login form input{
+    margin: .4rem 0;
+    padding:.4rem 1.5rem;
+    width: 300px;
+    font-size: 1.4rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--clr-login-accent);
+}
+
+.login form input:focus{
+    outline: none;
+}
+
+.login form button{
+    background-color: var(--clr-blue-accent);
+    color: white;
+    border-radius: 10px;
+    padding:.7rem 1.5rem;
+    margin-top: .4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.login form button:hover{
+    background-color: var(--clr-blue);
+    transition: all .5s ease;
+}
+

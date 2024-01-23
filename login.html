@@ -18,23 +18,30 @@
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
   </head>
   <body>
-    <form action="">
-      <label for="email">Email:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-      />
-      <label for="pwd">Password:</label>
-      <input
-        type="password"
-        id="pwd"
-        name="pwd"
-        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
-      />
-      <input type="submit" />
-    </form>
+    <div class="login">
+      <form action="">
+        <img
+          src="assets/FA_DIGICAMP_LOGO.png"
+          width="200px"
+          style="margin: auto; margin-top: -40px; padding: 1em"
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+        />
+        <label for="pwd">Password:</label>
+        <input
+          type="password"
+          id="pwd"
+          name="pwd"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+        />
+        <button type="submit">Login</button>
+      </form>
+    </div>
   </body>
 </html>
