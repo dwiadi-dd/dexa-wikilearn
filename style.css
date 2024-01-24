@@ -344,19 +344,16 @@ aside{
         padding: 1em 2em;
         padding-left: 12em;
         scrollbar-width: thin;
-        width: 98%;
         overflow-x: hidden;
         border-right: 1px solid var(--clr-shadow);
-        background-color: var(--clr-white);
-        height: 100vh;
+        background-color: var(--clr-white);        
         
-    
     }
     .sidebar-mobile{
         visibility: visible;
         min-height: 80vh;
         
-        }
+    }
 }
 
 
@@ -406,10 +403,12 @@ aside{
 
 /* Article */
 article{
-    height: 100vh;
     overflow: auto;
     padding-left: 2em;
+}
 
+article p {
+    line-height: 2;
 }
 
 .content{
@@ -452,7 +451,9 @@ footer{
 }
 
 .foot-accent{
+    height: 2em;
     width: 100%;
+    bottom: 0;
 }
 
 
@@ -465,9 +466,9 @@ footer{
 /* homepage */
 
 section.hero {
-    background-color: #f4f4f4;
+    background-color:var(--clr-white);
     height: fit-content;
-    background-image: url("../assets/main-bg-hero.svg");
+    background-image: url(./assets/svg-edited.svg);
     background-size: cover;
     object-fit: none;
     background-position: 35% 30%;
@@ -490,13 +491,13 @@ section.hero {
 
 
 .prologue h1{
-    font-size: 2em;
+    font-size: 1.4em;
     margin: .5em 0;
     font-weight: 600;
 }
 .prologue h2{
     color: var(--clr-white);
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -513,8 +514,8 @@ section.hero {
 
 .discover-button{
     background-color: var(--clr-white);
-    border: 1px solid var(--clr-blue);
-    color: var(--clr-blue);
+    border: 1px solid var(--clr-accent);
+    color: var(--clr-main);
     padding: 1em 2em;
     border-radius: 25px;
     width: fit-content;
@@ -525,13 +526,19 @@ section.hero {
     background-color: transparent;
     border:1px solid var(--clr-white);
     color: white;
+    transition: all .3s ease;
+}
+
+.discover-button:not(:hover){
+    
+    transition: all .2s ease;
 }
 
 @media (min-width: 900px) {
     section.hero {
         background-color: var(--clr-white);
-        height: 40vh;
-        background-image: url("../assets/main-bg-hero.svg");
+        height: 60vh;
+        background-image: url(./assets/svg-edited.svg);
         background-size: cover;
         object-fit: none;
         background-position: 35% 100%;
@@ -553,12 +560,12 @@ section.hero {
     .prologue h1{
         font-size: 2em;
         margin: .5em 0;
-        font-weight: 600;
+        font-weight: 900;
     }
     .prologue h2{
         color: var(--clr-white);
         font-size: 1.4rem;
-        font-weight: 400;
+        font-weight: 200;
     }
     
     .heroimg{
@@ -609,6 +616,7 @@ section.cores{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        padding-bottom: 8em;
     }
   }
   
@@ -718,26 +726,25 @@ section.cores{
 }
 
 
-/* requirement */
-section.requirement{
+/* about */
+section.about{
     height:max-content;
     display: flex;
     flex-direction: column;
     grid-template-columns: 1fr ;  
-    background-color: var(--clr-white-accent);
+    background-color: var(--clr-white);
 
 }
 
-section.requirement img{
-    width: 350px;
+section.about img{
+    width: 50%;
     margin: 2em auto;
     margin-bottom: 0;
 }
 
 .info{
     margin: auto auto;
-
-    width: 70vw;
+    width: 100vw;
     border-radius: 10px;
     padding: 1em 2em;
     padding-bottom: 4em;
@@ -756,17 +763,14 @@ section.requirement img{
 
 
 @media (min-width:1020px) {
-    section.requirement{
-        height:60vh;
+    section.about{
+        height:45vh;
         display: grid;
         grid-template-columns: 1fr 3fr;  
         background-color: var(--clr-white);
         padding: 0 10em;
-
-        
-    
     }
-    section.requirement img{
+    section.about img{
         width: 500px;
         margin: auto 4em;
     
