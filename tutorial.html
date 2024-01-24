@@ -20,19 +20,25 @@
   <body>
     <img class="top-accent" src="assets/DXG-Footer.webp" alt="" />
     <header>
-      <a href="#">
-        <!-- <span class="text-2xl font-semibold">Documentation</span> -->
-        <img src="assets/FA_DIGICAMP_LOGO.png" class="logo" alt="" />
-      </a>
-      <nav>
+      <div class="mobile-menu">
+        <a href="homepage.html">
+          <!-- <span class="text-2xl font-semibold">Documentation</span> -->
+          <img src="assets/FA_DIGICAMP_LOGO.png" class="logo" alt="" />
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="navHide()">
+          Menu
+        </a>
+      </div>
+      <nav id="main-nav" class="responsive">
         <ul class="menu-nav">
           <li class="menu-item">
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li class="menu-item">
-            <a href="#">Docs</a>
+            <a href="docs.html">Docs</a>
           </li>
         </ul>
+
         <form class="search-bar">
           <input id="search-input" placeholder="Search..." type="search" />
           <button type="submit" style="opacity: 0.4">
@@ -61,10 +67,10 @@
         <div class="side-menu">
           <h2 class="side-title">Content Index</h2>
           <nav class="side-nav">
-            <a class="side-nav-link" href="#"> Introduction </a>
-            <a class="side-nav-link active" href="#"> Tutorials </a>
-            <a class="side-nav-link" href="#"> API Reference </a>
-            <a class="side-nav-link" href="#"> Examples </a>
+            <a class="side-nav-link" href="index.html"> Introduction </a>
+            <a class="side-nav-link active" href="tutorial.html"> Tutorials </a>
+            <a class="side-nav-link" href="pdf.html"> PDF </a>
+            <a class="side-nav-link" href="video.html"> Video </a>
           </nav>
         </div>
         <div class="side-menu">

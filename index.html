@@ -16,23 +16,30 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <script src="index.js"></script>
   </head>
   <body>
     <img class="top-accent" src="assets/DXG-Footer.webp" alt="" />
     <header>
-      <a href="#">
-        <!-- <span class="text-2xl font-semibold">Documentation</span> -->
-        <img src="assets/FA_DIGICAMP_LOGO.png" class="logo" alt="" />
-      </a>
-      <nav>
+      <div class="mobile-menu">
+        <a href="homepage.html">
+          <!-- <span class="text-2xl font-semibold">Documentation</span> -->
+          <img src="assets/FA_DIGICAMP_LOGO.png" class="logo" alt="" />
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="navHide()">
+          Menu
+        </a>
+      </div>
+      <nav id="main-nav" class="responsive">
         <ul class="menu-nav">
           <li class="menu-item">
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li class="menu-item">
-            <a href="#">Docs</a>
+            <a href="docs.html">Docs</a>
           </li>
         </ul>
+
         <form class="search-bar">
           <input id="search-input" placeholder="Search..." type="search" />
           <button type="submit" style="opacity: 0.4">
@@ -56,80 +63,71 @@
       </nav>
     </header>
 
-    <main>
-      <aside>
-        <div class="side-menu">
-          <h2 class="side-title">Content Index</h2>
-          <nav class="side-nav">
-            <a class="side-nav-link" href="#"> Introduction </a>
-            <a class="side-nav-link active" href="#"> Tutorials </a>
-            <a class="side-nav-link" href="#"> API Reference </a>
-            <a class="side-nav-link" href="#"> Examples </a>
-          </nav>
-        </div>
-        <div class="side-menu">
-          <h2 class="side-title">Content Index</h2>
-          <nav class="side-nav">
-            <a class="side-nav-link" href="#"> Introduction </a>
-            <a class="side-nav-link" href="#"> Tutorials </a>
-            <a class="side-nav-link" href="#"> API Reference </a>
-            <a class="side-nav-link" href="#"> Examples </a>
-          </nav>
-        </div>
-      </aside>
-      <article>
-        <section class="content" id="getting-started-1">
-          <h2 class="content-title">Introduction</h2>
-          <p>
-            Pada tahun 1969, apt. Drs. Rudy Soetikno, apoteker muda yang
-            bertugas di TNI Angkatan Darat, melihat kelangkaan obat-obatan di
-            sekitarnya. Untuk mengatasi situasi ini, beliau memutuskan untuk
-            memanfaatkan pengetahuannya tentang obat-obatan dan mendirikan
-            apotek kecil bersama teman-temannya untuk memproduksi tablet. Apotek
-            kecil ini mampu memiliki reputasi yang cepat dalam memproduksi obat
-            resep. Obat resepnya dikenal sangat efektif sehingga mendorong
-            perluasan bisnis ke industri farmasi, fasilitas kesehatan, dan
-            pasar. Pada tahun 1978, produk Dexa telah tersedia di seluruh
-            wilayah Indonesia. Namanya, “Dexa”, berasal dari kata Yunani yang
-            berarti sepuluh, melambangkan kesempurnaan.
-          </p>
-          <div class="code-highlight">
-            <pre>
-              <code >npm install software</code>
-            </pre>
-          </div>
-        </section>
+    <section class="hero" id="prologue">
+      <div class="prologue">
+        <h1>Dexa Group IT Academy Program (Digicamp)</h1>
+        <h2>Fresh Graduate &#8226; Program Trainee</h2>
+        <a
+          href="#prologue"
+          aria-label="Learn More about Our Features"
+          class="discover-button"
+          >Discover More</a
+        >
+      </div>
+      <div class="heroimg">
+        <img src="assets/mainn1.svg" alt="" />
+      </div>
+    </section>
 
-        <section class="content" id="troubleshooting-1">
-          <h2 class="content-title">Obat Moderen Asli Indonesia</h2>
+    <section class="requirement" id="requirement">
+      <img src="assets/together.svg" alt="" />
+      <div class="info">
+        <h2 class="section-title">Tentang Digicamp</h2>
+        <p>
+          Digicamp (Dexa Group IT Academy Program) is to identify, develop, and
+          create future-ready leaders who possess the IT skills, knowledge, and
+          leadership capabilities to drive the organization’s success. By
+          providing 48 months fast-track program that focuses on technical and
+          soft skill development, organizations can achieve the objective.
+        </p>
+      </div>
+    </section>
+    <section id="cores" class="cores">
+      <h2 class="section-title">Core Values</h2>
+      <div class="base-core">
+        <div class="card">
+          <img class="card-img" src="assets/exelence.svg" alt="" />
+          <h3>Strive for Exellence</h3>
           <p>
-            Kami mengidentifikasi, mengekstrak, dan menguji biomolekul yang
-            berasal dari kekayaan alam biodiversitas asli Indonesia. Kemudian,
-            kami membuat ekstrak bahan alam yang sangat berharga tersebut
-            menjadi obat-obatan herbal yang sangat aman dan efektif.
+            A commitment to provide the best possible value to our customers
           </p>
-          <div class="code-highlight">
-            <pre>
-              <code  >software --configure</code>
-            </pre>
-          </div>
-        </section>
-        <section class="content" id="getting-started-2">
-          <h2 class="content-title">Configuration</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            dolorem repellendus possimus inventore at, autem commodi
-            necessitatibus est quisquam in porro quam beatae atque quas eius eos
-            facilis nihil hic! Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Qui obcaecati possimus blanditiis quasi harum rem
-            impedit magnam numquam! Reiciendis delectus maxime enim ratione
-            molestias obcaecati fuga et soluta facere omnis.
-          </p>
-        </section>
-      </article>
-    </main>
-    <footer>2024 &copy; <strong>digicamp</strong></footer>
+        </div>
+
+        <div class="card">
+          <img class="card-img" src="assets/pro.svg" alt="" />
+          <h3>Act Professional</h3>
+          <p>An emphasis on honesty and integrity</p>
+        </div>
+
+        <div class="card">
+          <img class="card-img" src="assets/care.svg" alt="" />
+          <h3>Deal With Care</h3>
+          <p>An effort to always understand and respect one another</p>
+        </div>
+      </div>
+    </section>
+    <section class="collaborate">
+      <h2 class="section-title">Our Families</h2>
+      <div class="company-list">
+        <img src="assets/logo/medica.webp" alt="" />
+        <img src="assets/logo/beta.webp" alt="" height="30px" />
+        <img src="assets/logo/ferron.webp" alt="" />
+        <img src="assets/logo/fonko.webp" alt="" />
+        <img src="assets/logo/argon.webp" alt="" />
+        <img src="assets/logo/dd.webp" alt="" />
+      </div>
+    </section>
+    <footer>2024 &copy; <strong>digicamp</strong> by dexa group</footer>
     <img class="foot-accent" src="assets/DXG-Footer.webp" alt="" />
-    <script src="index.js"></script>
   </body>
 </html>

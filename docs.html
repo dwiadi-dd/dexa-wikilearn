@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dexa Wikilearn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <img class="top-accent" src="assets/DXG-Footer.webp" alt="" />
+    <header>
+      <div class="mobile-menu">
+        <a href="homepage.html">
+          <!-- <span class="text-2xl font-semibold">Documentation</span> -->
+          <img src="assets/FA_DIGICAMP_LOGO.png" class="logo" alt="" />
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="navHide()">
+          Menu
+        </a>
+      </div>
+      <nav id="main-nav" class="responsive">
+        <ul class="menu-nav">
+          <li class="menu-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="docs.html">Docs</a>
+          </li>
+        </ul>
+
+        <form class="search-bar">
+          <input id="search-input" placeholder="Search..." type="search" />
+          <button type="submit" style="opacity: 0.4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-5 w-5"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </svg>
+          </button>
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <aside>
+        <div class="side-menu">
+          <h2 class="side-title">Content Index</h2>
+          <nav class="side-nav">
+            <a class="side-nav-link active" href="index.html"> Introduction </a>
+            <a class="side-nav-link" href="tutorial.html"> Tutorials </a>
+            <a class="side-nav-link" href="pdf.html"> PDF </a>
+            <a class="side-nav-link" href="video.html"> Video </a>
+          </nav>
+        </div>
+        <div class="side-menu">
+          <h2 class="side-title">Content Index</h2>
+          <nav class="side-nav">
+            <a class="side-nav-link" href="#"> Introduction </a>
+            <a class="side-nav-link" href="#"> Tutorials </a>
+            <a class="side-nav-link" href="#"> API Reference </a>
+            <a class="side-nav-link" href="#"> Examples </a>
+          </nav>
+        </div>
+      </aside>
+      <article>
+        <section class="content" id="getting-started-1">
+          <h2 class="content-title">Welcome to Dexa Family</h2>
+          <p>
+            dokumentasi ini akan menjadi panduan untuk segala yang akan kamu
+            kerjakan di IT dexa, selamat bergabung dan selamat bekerja!
+          </p>
+        </section>
+      </article>
+    </main>
+    <footer>2024 &copy; <strong>digicamp</strong></footer>
+    <img class="foot-accent" src="assets/DXG-Footer.webp" alt="" />
+    <script src="index.js"></script>
+  </body>
+</html>

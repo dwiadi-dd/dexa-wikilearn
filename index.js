@@ -9,3 +9,12 @@ for (i = 0; i < coll.length; i++) {
     sideNav.classList.toggle("hidden");
   });
 }
+
+// toggle responsive main nav
+
+const navHide = () => {
+  console.log("test");
+  const mainNav = document.getElementById("main-nav");
+
+  mainNav.classList.toggle("responsive");
+};
