@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="login">
-      <form action="">
+      <form action="docs.html">
         <img
           src="assets/FA_DIGICAMP_LOGO.png"
           width="200px"
@@ -31,16 +31,18 @@
           id="email"
           name="email"
           pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          required
         />
         <label for="pwd">Password:</label>
         <input
           type="password"
           id="pwd"
           name="pwd"
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-          title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+          title="Must contain minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character:          "
+          required
         />
-        <button type="submit">Login</button>
+        <button type="submit ">Login</button>
       </form>
     </div>
   </body>

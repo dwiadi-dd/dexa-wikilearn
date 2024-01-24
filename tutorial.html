@@ -68,23 +68,59 @@
     </header>
 
     <main>
-      <aside>
+      <div class="toggle-menu">
+        <a href="javascript:void(0);" class="icon-side" onclick="sidebarHide()">
+          <i class="fa fa-bars"></i> Menu
+        </a>
+      </div>
+      <aside id="main-sidebar" class="sidebar-mobile">
+        <div class="close-sidebar">
+          <a
+            href="javascript:void(0);"
+            class="icon-side"
+            onclick="sidebarHide()"
+            style="color: var(--clr-shadow)"
+          >
+            close
+          </a>
+        </div>
         <div class="side-menu">
-          <h2 class="side-title">Content Index</h2>
+          <h2 class="side-title">Introduction</h2>
           <nav class="side-nav">
-            <a class="side-nav-link" href="index.html"> Introduction </a>
+            <a class="side-nav-link" href="docs.html"> Introduction </a>
             <a class="side-nav-link active" href="tutorial.html"> Tutorials </a>
             <a class="side-nav-link" href="pdf.html"> PDF </a>
             <a class="side-nav-link" href="video.html"> Video </a>
           </nav>
         </div>
         <div class="side-menu">
-          <h2 class="side-title">Content Index</h2>
+          <h2 class="side-title">Rules & Regulation</h2>
           <nav class="side-nav">
-            <a class="side-nav-link" href="#"> Introduction </a>
-            <a class="side-nav-link" href="#"> Tutorials </a>
-            <a class="side-nav-link" href="#"> API Reference </a>
-            <a class="side-nav-link" href="#"> Examples </a>
+            <a class="side-nav-link" href="#">Rules </a>
+            <a class="side-nav-link" href="#">Regulation</a>
+            <a class="side-nav-link" href="#">About Dexa</a>
+            <a class="side-nav-link" href="#">Structure </a>
+            <a class="side-nav-link" href="#">IT Scrum </a>
+          </nav>
+        </div>
+        <div class="side-menu">
+          <h2 class="side-title">OMS</h2>
+          <nav class="side-nav">
+            <a class="side-nav-link" href="#">Rules </a>
+            <a class="side-nav-link" href="#">Regulation</a>
+            <a class="side-nav-link" href="#">About OMS</a>
+            <a class="side-nav-link" href="#">Structure </a>
+            <a class="side-nav-link" href="#">IT Scrum </a>
+          </nav>
+        </div>
+        <div class="side-menu">
+          <h2 class="side-title">iFocus</h2>
+          <nav class="side-nav">
+            <a class="side-nav-link" href="#">Rules </a>
+            <a class="side-nav-link" href="#">Regulation</a>
+            <a class="side-nav-link" href="#">About iFocus</a>
+            <a class="side-nav-link" href="#">Structure </a>
+            <a class="side-nav-link" href="#">IT Scrum </a>
           </nav>
         </div>
       </aside>
@@ -109,8 +145,20 @@
               <code >npm install software</code>
             </pre>
           </div>
+          <p>
+            Pada tahun 1969, apt. Drs. Rudy Soetikno, apoteker muda yang
+            bertugas di TNI Angkatan Darat, melihat kelangkaan obat-obatan di
+            sekitarnya. Untuk mengatasi situasi ini, beliau memutuskan untuk
+            memanfaatkan pengetahuannya tentang obat-obatan dan mendirikan
+            apotek kecil bersama teman-temannya untuk memproduksi tablet. Apotek
+            kecil ini mampu memiliki reputasi yang cepat dalam memproduksi obat
+            resep. Obat resepnya dikenal sangat efektif sehingga mendorong
+            perluasan bisnis ke industri farmasi, fasilitas kesehatan, dan
+            pasar. Pada tahun 1978, produk Dexa telah tersedia di seluruh
+            wilayah Indonesia. Namanya, “Dexa”, berasal dari kata Yunani yang
+            berarti sepuluh, melambangkan kesempurnaan.
+          </p>
         </section>
-
         <section class="content" id="troubleshooting-1">
           <h2 class="content-title">Obat Moderen Asli Indonesia</h2>
           <p>

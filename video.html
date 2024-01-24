@@ -66,30 +66,69 @@
       </nav>
     </header>
     <main>
-      <aside>
+      <div class="toggle-menu">
+        <a href="javascript:void(0);" class="icon-side" onclick="sidebarHide()">
+          <i class="fa fa-bars"></i> Menu
+        </a>
+      </div>
+      <aside id="main-sidebar" class="sidebar-mobile">
+        <div class="close-sidebar">
+          <a
+            href="javascript:void(0);"
+            class="icon-side"
+            onclick="sidebarHide()"
+            style="color: var(--clr-shadow)"
+          >
+            close
+          </a>
+        </div>
         <div class="side-menu">
-          <h2 class="side-title">Content Index</h2>
+          <h2 class="side-title">Introduction</h2>
           <nav class="side-nav">
-            <a class="side-nav-link" href="index.html"> Introduction </a>
+            <a class="side-nav-link" href="docs.html"> Introduction </a>
             <a class="side-nav-link" href="tutorial.html"> Tutorials </a>
             <a class="side-nav-link" href="pdf.html"> PDF </a>
-            <a class="side-nav-link active" href="#"> Video </a>
+            <a class="side-nav-link active" href="video.html"> Video </a>
           </nav>
         </div>
         <div class="side-menu">
-          <h2 class="side-title">Content Index</h2>
+          <h2 class="side-title">Rules & Regulation</h2>
           <nav class="side-nav">
-            <a class="side-nav-link" href="#"> Introduction </a>
-            <a class="side-nav-link" href="#"> Tutorials </a>
-            <a class="side-nav-link" href="#"> API Reference </a>
-            <a class="side-nav-link" href="#"> Examples </a>
+            <a class="side-nav-link" href="#">Rules </a>
+            <a class="side-nav-link" href="#">Regulation</a>
+            <a class="side-nav-link" href="#">About Dexa</a>
+            <a class="side-nav-link" href="#">Structure </a>
+            <a class="side-nav-link" href="#">IT Scrum </a>
+          </nav>
+        </div>
+        <div class="side-menu">
+          <h2 class="side-title">OMS</h2>
+          <nav class="side-nav">
+            <a class="side-nav-link" href="#">Rules </a>
+            <a class="side-nav-link" href="#">Regulation</a>
+            <a class="side-nav-link" href="#">About OMS</a>
+            <a class="side-nav-link" href="#">Structure </a>
+            <a class="side-nav-link" href="#">IT Scrum </a>
+          </nav>
+        </div>
+        <div class="side-menu">
+          <h2 class="side-title">iFocus</h2>
+          <nav class="side-nav">
+            <a class="side-nav-link" href="#">Rules </a>
+            <a class="side-nav-link" href="#">Regulation</a>
+            <a class="side-nav-link" href="#">About iFocus</a>
+            <a class="side-nav-link" href="#">Structure </a>
+            <a class="side-nav-link" href="#">IT Scrum </a>
           </nav>
         </div>
       </aside>
       <article>
-        <section class="videoviewer" style="height: 100vh">
+        <section
+          class="videoviewer"
+          style="display: flex; flex-direction: column"
+        >
           <h2 class="content-title">Video Preview</h2>
-          <video height="80%" width="50%" controls>
+          <video width="80%" style="margin: 0 auto" controls>
             <source src="assets/miniproject.mkv" type="video/mp4" />
           </video>
         </section>

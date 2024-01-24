@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="portal digicamp dan dokumentasi" />
+
     <title>Dexa Wikilearn</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,9 +33,9 @@
           <!-- <span class="text-2xl font-semibold">Documentation</span> -->
           <img src="assets/FA_DIGICAMP_LOGO.png" class="logo" alt="" />
         </a>
-        <a href="javascript:void(0);" class="icon" onclick="navHide()">
-          Menu
-        </a>
+        <div class="icon" onclick="navHide()">
+          <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
       </div>
       <nav id="main-nav" class="responsive">
         <ul class="menu-nav">
@@ -41,13 +43,13 @@
             <a href="index.html">Home</a>
           </li>
           <li class="menu-item">
-            <a href="docs.html">Docs</a>
+            <a href="login.html">Docs</a>
           </li>
         </ul>
 
         <form class="search-bar">
           <input id="search-input" placeholder="Search..." type="search" />
-          <button type="submit" style="opacity: 0.4">
+          <button type="submit" style="opacity: 0.4" title="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -72,10 +74,7 @@
       <div class="prologue">
         <h1>Dexa Group IT Academy Program (Digicamp)</h1>
         <h2>Fresh Graduate &#8226; Program Trainee</h2>
-        <a
-          href="#prologue"
-          aria-label="Learn More about Our Features"
-          class="discover-button"
+        <a href="#prologue" aria-label="Discover More" class="discover-button"
           >Discover More</a
         >
       </div>
@@ -98,6 +97,8 @@
       </div>
     </section>
     <section id="cores" class="cores">
+      <hr style="width: 50%; margin: auto; opacity: 0.8" />
+
       <h2 class="section-title">Core Values</h2>
       <div class="base-core">
         <div class="card">
