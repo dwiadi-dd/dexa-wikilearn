@@ -467,7 +467,7 @@ footer{
 section.hero {
     background-color: #f4f4f4;
     height: fit-content;
-    background-image: url('/assets/main-bg-hero.svg');
+    background-image: url(../assets/main-bg-hero.svg);
     background-size: cover;
     object-fit: none;
     background-position: 35% 30%;
@@ -531,7 +531,7 @@ section.hero {
     section.hero {
         background-color: var(--clr-white);
         height: 40vh;
-        background-image: url('/assets/main-bg-hero.svg');
+        background-image: url(/assets/main-bg-hero.svg);
         background-size: cover;
         object-fit: none;
         background-position: 35% 100%;
