@@ -18,3 +18,10 @@ const navHide = () => {
 
   mainNav.classList.toggle("responsive");
 };
+
+const sidebarHide = () => {
+  console.log("test");
+  const siebar = document.querySelector("#main-sidebar");
+
+  siebar.classList.toggle("sidebar-mobile");
+};
