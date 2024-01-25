@@ -23,5 +23,5 @@ const sidebarHide = () => {
   console.log("test");
   const siebar = document.querySelector("#main-sidebar");
 
-  siebar.classList.toggle("sidebar-mobile");
+  siebar.classList.toggle("sidebar-docs");
 };
