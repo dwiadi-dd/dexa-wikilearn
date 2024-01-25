@@ -210,6 +210,7 @@ aside{
 	padding-left: 2em;
 	border-right: .2px solid var(--clr-shadow);
 	overflow: auto;
+	z-index: 100;
 }
 .toggle-menu{
 	background-color: var(--clr-white);
