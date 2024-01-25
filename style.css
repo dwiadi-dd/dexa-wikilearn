@@ -398,7 +398,7 @@ section.hero {
 .heroimg img{
 	margin: 0 auto;
 	margin-top: 4em;
-	max-height: 12rem;
+	max-height: 10rem;
 }
 .discover-button{
 	background-color: var(--clr-white);
